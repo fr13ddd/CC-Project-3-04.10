@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FPS Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="survey-form">
+        <h2>FPS Survey</h2>
+
+        <label for="do-you-play-game">Do you play FPS (First Person Shooter) games?</label>
+        <select id="do-you-play-game" name="do-you-play-game">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="what-game">What games do you usually play?</label>
+        <select id="what-game" name="what-game">
+            <option value="Call of Duty series">Call of Duty series</option>
+            <option value="Counter-Strike">Counter-Strike</option>
+            <option value="Battlefield series">Battlefield series</option>
+            <option value="Overwatch">Overwatch</option>
+            <option value="Apex Legends">Apex Legends</option>
+            <option value="valorant">Valorant</option>
+            <option value="Rainbow Six Siege">Rainbow Six Siege</option>
+        </select>
+
+        <label for="play-time">How many hours do you play FPS games per week?</label>
+        <select id="play-time" name="play_time">
+            <option value="0-5 hours">0-5 hours</option>
+            <option value="6-10 hours">6-10 hours</option>
+            <option value="11-15 hours">11-15 hours</option>
+            <option value="16+ hours">16+ hours</option>
+        </select>
+
+        <label>Do you prefer single-player or multiplayer?</label>
+        <select name="game_mode">
+            <option value="single-player">Single-player</option>
+            <option value="multiplayer">Multiplayer</option>
+        </select>
+
+        <label for="attractiveness">What specific things attract you to the game?</label>
+        <select id="attractiveness" name="attractiveness">
+            <option value="Social Interaction">Social Interaction</option>
+            <option value="Gameplay Depth">Gameplay Depth</option>
+            <option value="Graphics and Visuals">Graphics and Visuals</option>
+            <option value="Diverse Content">Diverse Content</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="skill-level">Do you think you are good at it?</label>
+        <select id="skill-level" name="skill_level">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Not sure">Not sure</option>
+        </select>
+
+        <label for="play-style">What is your play style?</label>
+        <select id="play-style" name="play_style">
+            <option value="Aggressive">Aggressive</option>
+            <option value="Defensive">Defensive</option>
+            <option value="Strategic">Strategic</option>
+            <option value="Casual">Casual</option>
+            <option value="Competitive">Competitive</option>
+            <option value="Team Player">Team Player</option>
+            <option value="Solo Player">Solo Player</option>
+        </select>
+
+        <button type="button" onclick="submitSurvey()">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
